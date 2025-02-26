@@ -1,1 +1,1 @@
-# Learning-Web-Technologies-Spring2024-25-Section-B
+# Learning Web Technologies Spring 2024-25 Section-B
