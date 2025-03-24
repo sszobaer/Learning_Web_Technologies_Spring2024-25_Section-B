@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email</title>
+    <style>
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 12px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <fieldset>
         <legend>Email</legend>
-        <form action="gender.html">
+        <form action="gender.html" onsubmit="return emailValidation()">
             <table>
                 <tr>
                     <td>Email</td>
-                    <td><input type="email" name="" id="email"></td>
+                    <td>
+                        <input type="text" id="email">
+                        <div class="tooltip-container">
+                            <input type="button" value="i" id="suggestion">
+                            <span class="tooltip" id="tooltip-text">hint: sample@example.com</span>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><input type="submit" value="Submit"></td>

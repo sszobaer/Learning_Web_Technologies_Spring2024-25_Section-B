@@ -8,12 +8,13 @@
 <body>
     <fieldset>
         <legend>Blood Group</legend>
-        <form action="profilePicture.html" method="post">
+        <form action="profilePicture.html" onsubmit="return bloodGroupValidation()">
             <table>
                 <tr>
                     <td>Blood Group:</td>
                     <td>
                         <select name="bloodGroup" id="bloodGroup">
+                            <option value="">Choose Blood Group</option>
                             <option value="A+">A+</option>
                             <option value="A-">A-</option>
                             <option value="B+">B+</option>

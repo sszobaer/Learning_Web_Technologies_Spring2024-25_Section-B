@@ -8,7 +8,7 @@
 <body>
     <fieldset>
         <legend>Name</legend>
-        <form action="email.html" id = "nameForm" onsubmit="return nameValidation()">
+        <form action="email.html"id = "nameForm" onsubmit="return nameValidation()">
             <table>
                 <tr>
                     <td>Name</td>
@@ -21,23 +21,6 @@
         </form>
     </fieldset>
 
-    <script src="index.js">
-        //Name.html
-    let nameValidation  = ()=>{
-    let name = document.getElementById("name");
-    const nameValue = nameInput.value.trim();
-    const words = nameValue.split(/\s+/);
-    if(name == ""){
-        alert("Please enter your name.")
-        return  false;
-    }
-    else if(words.length < 2 ){
-        alert("Name must contain at least two words.");
-        return false;
-    }
-    return true;
-
-};
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
